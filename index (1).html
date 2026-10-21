@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IT Era</title>
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--ink:#1c2233;--muted:#5b6478;--accent:#2f5bea;--line:#e2e6f0}
+@media (prefers-color-scheme:dark){:root{--bg:#12151f;--card:#1b2030;--ink:#e8ebf5;--muted:#9aa3b8;--accent:#7b9bff;--line:#2b3247}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+.hero{padding:48px 0 24px;text-align:center}
+.hero h1{margin:0;font-size:clamp(2rem,5vw,3rem);letter-spacing:-.02em}
+.hero p{margin:8px 0 0;color:var(--muted)}
+nav{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:center;padding:12px 16px}
+nav a{color:var(--accent);font-weight:600;text-decoration:underline;text-underline-offset:4px}
+nav a:hover{opacity:.75}
+.domain{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:28px 0;padding:20px;scroll-margin-top:70px}
+.domain-head{display:flex;align-items:center;gap:16px;margin-bottom:16px;flex-wrap:wrap}
+.logo{position:relative;width:120px;height:90px;flex:none;border:2px dashed var(--line);border-radius:10px;display:grid;place-items:center;overflow:hidden}
+.logo::before{content:"LOGO";color:var(--muted);font-size:.75rem;letter-spacing:.1em}
+.logo img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:var(--card)}
+.logo img[src=""]{visibility:hidden}
+.num{color:var(--muted);font-size:.8rem;font-weight:700;letter-spacing:.1em}
+h2{margin:0;font-size:1.7rem}
+.top{margin-left:auto;font-size:.85rem;color:var(--muted)}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.card{border:1px solid var(--line);border-radius:10px;padding:16px}
+.card h3{margin:0 0 10px;font-size:.85rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent)}
+.card ul{margin:0;padding-left:18px}
+.card li{margin-bottom:10px}
+footer{text-align:center;color:var(--muted);padding:24px 0 48px;font-size:.85rem}
+@media(max-width:720px){.cols{grid-template-columns:1fr}.top{margin-left:0;width:100%}}
+</style>
+</head>
+<body id="top">
+<div class="hero wrap">
+  <h1>IT Era</h1>
+  <p>Domain · Application Usage · Digital Transformation</p>
+</div>
+<nav><div class="wrap"><a href="#agriculture">Agriculture</a><a href="#smart-home">Smart Home</a><a href="#transportation">Transportation</a><a href="#healthcare">Healthcare</a><a href="#education">Education</a><a href="#finance">Finance</a></div></nav>
+<main class="wrap">
+  <section class="domain" id="agriculture">
+    <header class="domain-head">
+      <div class="logo"><img src="" alt="Agriculture logo"></div>
+      <div>
+        <span class="num">01</span>
+        <h2>Agriculture</h2>
+      </div>
+      <a class="top" href="#top">&uarr; Back to top</a>
+    </header>
+    <div class="cols">
+      <article class="card">
+        <h3>Application Usage</h3>
+        <ul><li><strong>Plantix:</strong> An AI-driven app that acts as a mobile plant doctor. Farmers can upload photos of damaged crops to diagnose diseases, pests, and nutrient deficiencies while receiving targeted treatment plans.</li><li><strong>Climate FieldView:</strong> A precision agriculture platform that aggregates data from farm machinery, satellite imagery, and weather tracking to optimize planting strategies, soil fertility, and crop yields.</li><li><strong>Agrio:</strong> An AI-powered crop monitoring platform that detects early signs of plant stress, disease outbreaks, and pest infestations using satellite data and remote scouting tools.</li></ul>
+      </article>
+      <article class="card">
+        <h3>Digital Transformation</h3>
+        <ul><li><strong>Precision Agriculture &amp; IoT Sensing:</strong> Transitioning from blanket field management to site-specific crop management. Soil sensors, drone imagery, and IoT probes collect real-time field data (moisture, pH, nitrogen) to variable-rate apply water, fertilizer, and pesticides down to individual plants.</li><li><strong>Autonomous &amp; Robotic Farming:</strong> Replacing manual field labor with self-driving tractors, automated weeding robots, and drone spraying systems that run 24/7 with pinpoint GPS precision.</li><li><strong>Blockchain-Enabled Supply Chain Traceability:</strong> Digitizing farm-to-table supply chains so consumers and food distributors can scan a QR code to trace food products back to their exact farm origin, harvest timestamp, and cold-chain temperature history.</li></ul>
+      </article>
+    </div>
+  </section>
+  <section class="domain" id="smart-home">
+    <header class="domain-head">
+      <div class="logo"><img src="" alt="Smart Home logo"><!-- ADD IMAGE ADDRESS: Smart Home --></div>
+      <div>
+        <span class="num">02</span>
+        <h2>Smart Home</h2>
+      </div>
+      <a class="top" href="#top">&uarr; Back to top</a>
+    </header>
+    <div class="cols">
+      <article class="card">
+        <h3>Application Usage</h3>
+        <ul><li><strong>Google Home:</strong> A centralized ecosystem management app that allows users to control, schedule, and automate smart devices across lighting, thermostats, speakers, and cameras.</li><li><strong>Home Assistant:</strong> An open-source smart home platform designed for local control and high customization, integrating thousands of smart devices regardless of brand or protocol.</li><li><strong>SmartLife:</strong> A universal app used to pair and automate a wide range of third-party IoT appliances, including smart plugs, light strips, sensors, and security equipment.</li></ul>
+      </article>
+      <article class="card">
+        <h3>Digital Transformation</h3>
+        <ul><li><strong>Unified Ecosystem Standardization:</strong> Digitally transforming fragmented smart device ecosystems (Apple Home, Google Home, Amazon Alexa) into a single unified protocol so all smart home products interoperate seamlessly without compatibility silos.</li><li><strong>Predictive AI Energy &amp; Climate Automation:</strong> Shifting from simple time-based schedules to adaptive HVAC and lighting systems. Homes learn resident routines, weather shifts, and peak electricity pricing to adjust temperatures and energy consumption autonomously.</li><li><strong>Ambient Intelligence &amp; Sensor-Driven Safety:</strong> Replacing active manual commands with invisible background sensors—such as radar fall detection for senior care, automated main-water shutoff valves upon detecting pipe leaks, and smart lock biometric automation.</li></ul>
+      </article>
+    </div>
+  </section>
+  <section class="domain" id="transportation">
+    <header class="domain-head">
+      <div class="logo"><img src="" alt="Transportation logo"><!-- ADD IMAGE ADDRESS: Transportation --></div>
+      <div>
+        <span class="num">03</span>
+        <h2>Transportation</h2>
+      </div>
+      <a class="top" href="#top">&uarr; Back to top</a>
+    </header>
+    <div class="cols">
+      <article class="card">
+        <h3>Application Usage</h3>
+        <ul><li><strong>Moovit:</strong> An urban mobility and transit app that combines real-time bus, train, metro, and ferry navigation with live GPS updates and multimodal route planning.</li><li><strong>Waze:</strong> A community-driven navigation app providing real-time crowd-sourced traffic data, hazard alerts, speed trap notifications, and dynamic rerouting.</li><li><strong>Uber:</strong> A global mobility platform facilitating ways to commute, shared transport solutions, micro-mobility (scooters/bikes), and parcel delivery tracking.</li></ul>
+      </article>
+      <article class="card">
+        <h3>Digital Transformation</h3>
+        <ul><li><strong>Connected Fleet Telematics &amp; Predictive Maintenance:</strong> Upgrading fleet management from scheduled servicing to sensor-driven predictive diagnostics. Onboard IoT telematics transmit real-time vehicle performance metrics to predict component failures before breakdowns occur.</li><li><strong>Smart Traffic &amp; Dynamic Route Optimization:</strong> Digitizing urban traffic management with AI traffic lights and cloud-routed navigation that dynamically adjust signal timings and delivery paths based on real-time congestion, weather, and accidents.</li><li><strong>Mobility-as-a-Service (MaaS):</strong> Unifying fragmented transit systems (buses, metro, ride-shares, bikes) into a single digital platform where users can plan, book, and pay for multi-modal journeys across cities through a single digital pass.</li></ul>
+      </article>
+    </div>
+  </section>
+  <section class="domain" id="healthcare">
+    <header class="domain-head">
+      <div class="logo"><img src="" alt="Healthcare logo"><!-- ADD IMAGE ADDRESS: Healthcare --></div>
+      <div>
+        <span class="num">04</span>
+        <h2>Healthcare</h2>
+      </div>
+      <a class="top" href="#top">&uarr; Back to top</a>
+    </header>
+    <div class="cols">
+      <article class="card">
+        <h3>Application Usage</h3>
+        <ul><li><strong>MyFitnessPal:</strong> A comprehensive nutrition and health-tracking application that monitors food logs, daily micro-nutrient distribution, and physical exercise.</li><li><strong>Teladoc:</strong> A digital health application providing on-demand remote virtual consultations, medical diagnostics, and prescription management with licensed healthcare professionals.</li><li><strong>Apple Health:</strong> An integrated personal health aggregator that tracks activity metrics, sleep patterns, heart rates, and medical records from wearable devices.</li></ul>
+      </article>
+      <article class="card">
+        <h3>Digital Transformation</h3>
+        <ul><li><strong>Electronic Health Record (EHR) Interoperability &amp; Cloud Migration:</strong> Replacing physical paper charts and siloed medical records with cloud-based EHR platforms that give authorized clinicians instant, secure access to patient histories across hospital networks.</li><li><strong>Remote Patient Monitoring (RPM) &amp; Telehealth Ecosystems:</strong> Transforming clinical care delivery through wearable medical devices and virtual consultations, enabling continuous remote tracking of vital signs (heart rate, glucose, oxygen) outside hospital walls.</li><li><strong>AI-Assisted Diagnostics &amp; Clinical Scribing:</strong> Integrating generative AI and computer vision into workflows—automating physician note-taking during consultations and using deep-learning models to assist radiologists in detecting early-stage tumors from X-rays and MRIs.</li></ul>
+      </article>
+    </div>
+  </section>
+  <section class="domain" id="education">
+    <header class="domain-head">
+      <div class="logo"><img src="" alt="Education logo"><!-- ADD IMAGE ADDRESS: Education --></div>
+      <div>
+        <span class="num">05</span>
+        <h2>Education</h2>
+      </div>
+      <a class="top" href="#top">&uarr; Back to top</a>
+    </header>
+    <div class="cols">
+      <article class="card">
+        <h3>Application Usage</h3>
+        <ul><li><strong>Duolingo:</strong> A gamified language-learning application using adaptive micro-lessons, speech recognition, and interactive quizzes to teach over 40 languages.</li><li><strong>Khan Academy:</strong> An interactive learning platform offering video tutorials, practice exercises, and personalized learning dashboards spanning mathematics, science, computing, and humanities.</li><li><strong>Google Classroom:</strong> A widely used learning management system (LMS) app that allows students to access course materials, submit assignments and take quizzes.</li></ul>
+      </article>
+      <article class="card">
+        <h3>Digital Transformation</h3>
+        <ul><li><strong>Adaptive Learning Platforms:</strong> Transitioning away from one-size-fits-all textbooks to AI-driven personalized learning systems that analyze individual student quiz responses, speed, and comprehension to tailor custom lesson plans in real time.</li><li><strong>Virtual Classroom:</strong> Allows students to interact and communicate through text/voice chat with their professors. It also provides the possibility to screen record the lecture (Only if permitted).</li><li><strong>Automated Learning Management Systems (LMS):</strong> Transforming school administration by integrating automated grading, early-warning risk analytics for students, and centralized digital assignment submission workflows across entire universities or school districts.</li></ul>
+      </article>
+    </div>
+  </section>
+  <section class="domain" id="finance">
+    <header class="domain-head">
+      <div class="logo"><img src="" alt="Finance logo"><!-- ADD IMAGE ADDRESS: Finance --></div>
+      <div>
+        <span class="num">06</span>
+        <h2>Finance</h2>
+      </div>
+      <a class="top" href="#top">&uarr; Back to top</a>
+    </header>
+    <div class="cols">
+      <article class="card">
+        <h3>Application Usage</h3>
+        <ul><li><strong>PayPal:</strong> A digital wallet and payment gateway enabling peer-to-peer money transfers, online merchant payments, and business transaction processing.</li><li><strong>G-cash:</strong> GCash is an e-wallet app, providing everyday digital payments, micro-loans, money transfers, and financial services.</li><li><strong>PayMaya:</strong> an all-in-one financial app that combines an e-wallet, cryptocurrency trading, and an officially licensed digital bank offering high-yield savings accounts and credit services.</li></ul>
+      </article>
+      <article class="card">
+        <h3>Digital Transformation</h3>
+        <ul><li><strong>Open Banking APIs:</strong> Replacing legacy banking infrastructure with cloud-native architectures and secure APIs that allow financial institutions to securely share user data with third-party fintech applications for seamless cross-platform management.</li><li><strong>AI-Powered Automated Underwriting &amp; Fraud Detection:</strong> Upgrading manual loan approvals and security checks with real-time machine learning algorithms that instantly evaluate creditworthiness and flag anomalous fraud transactions in milliseconds.</li><li><strong>Digital Wallets &amp; Contactless Payment Rails:</strong> Shifting society from physical cash and card infrastructure to instant tokenized mobile payments, peer-to-peer digital wallets, and central bank digital currencies (CBDCs).</li></ul>
+      </article>
+    </div>
+  </section>
+</main>
+<footer>IT Era</footer>
+</body>
+</html>

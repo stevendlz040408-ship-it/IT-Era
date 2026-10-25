@@ -27,13 +27,15 @@ nav a:hover{opacity:.75}
 .num{color:var(--muted);font-size:.8rem;font-weight:700;letter-spacing:.1em}
 h2{margin:0;font-size:1.7rem}
 .top{margin-left:auto;font-size:.85rem;color:var(--muted)}
-.cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.cols{display:grid;grid-template-columns:.75fr 1fr 1fr;gap:16px}
+.photo{position:relative;min-height:260px;border-radius:10px;overflow:hidden;border:1px solid var(--line)}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .card{border:1px solid var(--line);border-radius:10px;padding:16px}
 .card h3{margin:0 0 10px;font-size:.85rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent)}
 .card ul{margin:0;padding-left:18px}
 .card li{margin-bottom:10px}
 footer{text-align:center;color:var(--muted);padding:24px 0 48px;font-size:.85rem}
-@media(max-width:720px){.cols{grid-template-columns:1fr}.top{margin-left:0;width:100%}}
+@media(max-width:720px){.cols{grid-template-columns:1fr}.photo{min-height:0;height:220px}.top{margin-left:0;width:100%}}
 </style>
 </head>
 <body id="top">
@@ -53,6 +55,7 @@ footer{text-align:center;color:var(--muted);padding:24px 0 48px;font-size:.85rem
       <a class="top" href="#top">&uarr; Back to top</a>
     </header>
     <div class="cols">
+      <div class="photo"><img src="photo-agriculture.jpg" alt="Agriculture in real life"></div>
       <article class="card">
         <h3>Application Usage</h3>
         <ul><li><strong>Plantix:</strong> An AI-driven app that acts as a mobile plant doctor. Farmers can upload photos of damaged crops to diagnose diseases, pests, and nutrient deficiencies while receiving targeted treatment plans.</li><li><strong>Climate FieldView:</strong> A precision agriculture platform that aggregates data from farm machinery, satellite imagery, and weather tracking to optimize planting strategies, soil fertility, and crop yields.</li><li><strong>Agrio:</strong> An AI-powered crop monitoring platform that detects early signs of plant stress, disease outbreaks, and pest infestations using satellite data and remote scouting tools.</li></ul>
@@ -73,6 +76,7 @@ footer{text-align:center;color:var(--muted);padding:24px 0 48px;font-size:.85rem
       <a class="top" href="#top">&uarr; Back to top</a>
     </header>
     <div class="cols">
+      <div class="photo"><img src="photo-smart-home.jpg" alt="Smart Home in real life"></div>
       <article class="card">
         <h3>Application Usage</h3>
         <ul><li><strong>Google Home:</strong> A centralized ecosystem management app that allows users to control, schedule, and automate smart devices across lighting, thermostats, speakers, and cameras.</li><li><strong>Home Assistant:</strong> An open-source smart home platform designed for local control and high customization, integrating thousands of smart devices regardless of brand or protocol.</li><li><strong>SmartLife:</strong> A universal app used to pair and automate a wide range of third-party IoT appliances, including smart plugs, light strips, sensors, and security equipment.</li></ul>
@@ -93,6 +97,7 @@ footer{text-align:center;color:var(--muted);padding:24px 0 48px;font-size:.85rem
       <a class="top" href="#top">&uarr; Back to top</a>
     </header>
     <div class="cols">
+      <div class="photo"><img src="photo-transportation.jpg" alt="Transportation in real life"></div>
       <article class="card">
         <h3>Application Usage</h3>
         <ul><li><strong>Moovit:</strong> An urban mobility and transit app that combines real-time bus, train, metro, and ferry navigation with live GPS updates and multimodal route planning.</li><li><strong>Waze:</strong> A community-driven navigation app providing real-time crowd-sourced traffic data, hazard alerts, speed trap notifications, and dynamic rerouting.</li><li><strong>Uber:</strong> A global mobility platform facilitating ways to commute, shared transport solutions, micro-mobility (scooters/bikes), and parcel delivery tracking.</li></ul>
@@ -113,6 +118,7 @@ footer{text-align:center;color:var(--muted);padding:24px 0 48px;font-size:.85rem
       <a class="top" href="#top">&uarr; Back to top</a>
     </header>
     <div class="cols">
+      <div class="photo"><img src="photo-healthcare.jpg" alt="Healthcare in real life"></div>
       <article class="card">
         <h3>Application Usage</h3>
         <ul><li><strong>MyFitnessPal:</strong> A comprehensive nutrition and health-tracking application that monitors food logs, daily micro-nutrient distribution, and physical exercise.</li><li><strong>Teladoc:</strong> A digital health application providing on-demand remote virtual consultations, medical diagnostics, and prescription management with licensed healthcare professionals.</li><li><strong>Apple Health:</strong> An integrated personal health aggregator that tracks activity metrics, sleep patterns, heart rates, and medical records from wearable devices.</li></ul>
@@ -133,6 +139,7 @@ footer{text-align:center;color:var(--muted);padding:24px 0 48px;font-size:.85rem
       <a class="top" href="#top">&uarr; Back to top</a>
     </header>
     <div class="cols">
+      <div class="photo"><img src="photo-education.jpg" alt="Education in real life"></div>
       <article class="card">
         <h3>Application Usage</h3>
         <ul><li><strong>Duolingo:</strong> A gamified language-learning application using adaptive micro-lessons, speech recognition, and interactive quizzes to teach over 40 languages.</li><li><strong>Khan Academy:</strong> An interactive learning platform offering video tutorials, practice exercises, and personalized learning dashboards spanning mathematics, science, computing, and humanities.</li><li><strong>Google Classroom:</strong> A widely used learning management system (LMS) app that allows students to access course materials, submit assignments and take quizzes.</li></ul>
@@ -153,6 +160,7 @@ footer{text-align:center;color:var(--muted);padding:24px 0 48px;font-size:.85rem
       <a class="top" href="#top">&uarr; Back to top</a>
     </header>
     <div class="cols">
+      <div class="photo"><img src="photo-finance.jpg" alt="Finance in real life"></div>
       <article class="card">
         <h3>Application Usage</h3>
         <ul><li><strong>PayPal:</strong> A digital wallet and payment gateway enabling peer-to-peer money transfers, online merchant payments, and business transaction processing.</li><li><strong>G-cash:</strong> GCash is an e-wallet app, providing everyday digital payments, micro-loans, money transfers, and financial services.</li><li><strong>PayMaya:</strong> an all-in-one financial app that combines an e-wallet, cryptocurrency trading, and an officially licensed digital bank offering high-yield savings accounts and credit services.</li></ul>
